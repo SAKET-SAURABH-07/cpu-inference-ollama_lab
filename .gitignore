@@ -1,0 +1,6 @@
+*.gguf
+__pycache__/
+.venv/
+models/
+tools/
+*.pyc
