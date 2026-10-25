@@ -1,0 +1,14 @@
+# Artifact Hashes
+# Recorded for cpu-llm-inference-lab
+
+Name: llama-b11871-bin-win-cpu-x64.zip
+Byte size: 24216651
+SHA256: A39AE0A534A3CCFBF5C10B5B5C662DA93CECAC3C796173DE786B7E89F4F0CCFA
+Source URL: https://github.com/ggml-org/llama.cpp/releases/download/b11871/llama-b11871-bin-win-cpu-x64.zip
+Date retrieved: 2026-10-25T12:17:03+05:30 (2026-10-25)
+
+Name: qwen2.5-0.5b-instruct-q4_k_m.gguf
+Byte size: 491400032
+SHA256: 74A4DA8C9FDBCD15BD1F6D01D621410D31C6FC00986F5EB687824E7B93D7A9DB
+Source URL: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf
+Date retrieved: 2026-10-25T12:20:33+05:30 (2026-10-25)

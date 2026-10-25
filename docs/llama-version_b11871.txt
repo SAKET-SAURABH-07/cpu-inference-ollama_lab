@@ -1,0 +1,9 @@
+﻿=== llama-bench --version ===
+load_backend: loaded RPC backend from F:\cpu-llm-inference-lab\tools\llama.cpp\b11871\ggml-rpc.dll
+load_backend: loaded CPU backend from F:\cpu-llm-inference-lab\tools\llama.cpp\b11871\ggml-cpu-alderlake.dll
+version: 0.7.0-dev (build 11871, commit b3fa69955)
+built with Clang 20.1.8 for Windows x86_64
+
+=== llama-cli --version ===
+version: 0.7.0-dev (build 11871, commit b3fa69955)
+built with Clang 20.1.8 for Windows x86_64
