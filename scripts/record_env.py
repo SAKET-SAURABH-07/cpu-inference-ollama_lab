@@ -199,12 +199,30 @@ def main() -> None:
         "git": probe_git(),
     }
 
+    warnings: list[str] = []
+    cpu_proc = record.get("cpu", {}).get("win32_processor")
+    if isinstance(cpu_proc, dict) and "error" in cpu_proc:
+        warnings.append(f"cpu.win32_processor: {cpu_proc['error']}")
+    mem_raw = record.get("memory", {}).get("modules_raw")
+    if isinstance(mem_raw, dict) and "error" in mem_raw:
+        warnings.append(f"memory.modules_raw: {mem_raw['error']}")
+    if not record.get("power_plan", {}).get("ok"):
+        power = record.get("power_plan", {})
+        warnings.append(f"power_plan: ok is false ({power.get('error') or power.get('stderr') or 'failed'})")
+    llama_bench = record.get("llama_cpp", {}).get("llama-bench")
+    if not isinstance(llama_bench, dict) or not llama_bench.get("ok"):
+        err = llama_bench.get("error") if isinstance(llama_bench, dict) else "llama-bench missing"
+        warnings.append(f"llama-bench: {err}")
+    record["warnings"] = warnings
+
     args.out_dir.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     path = args.out_dir / f"env_{stamp}_{args.label}.json"
     path.write_text(json.dumps(record, indent=2), encoding="utf-8")
     print(f"Wrote {path}")
     print(json.dumps({k: record[k] for k in ("os", "power_plan")}, indent=2))
+    for w in warnings:
+        print(f"WARNING: {w}")
 
 
 if __name__ == "__main__":
