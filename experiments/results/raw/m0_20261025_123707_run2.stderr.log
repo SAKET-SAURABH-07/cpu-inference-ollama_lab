@@ -1,0 +1,2 @@
+load_backend: loaded RPC backend from F:\cpu-llm-inference-lab\tools\llama.cpp\b11871\ggml-rpc.dll
+load_backend: loaded CPU backend from F:\cpu-llm-inference-lab\tools\llama.cpp\b11871\ggml-cpu-alderlake.dll

@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-10-25T12:37:07+05:30",
+  "label": "m0-bench",
+  "os": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26300",
+    "machine": "AMD64"
+  },
+  "python": {
+    "version": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "executable": "F:\\cpu-llm-inference-lab\\.venv\\Scripts\\python.exe"
+  },
+  "cpu": {
+    "platform_processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "os_cpu_count": 12,
+    "win32_processor": {
+      "Name": "12th Gen Intel(R) Core(TM) i5-12400F",
+      "NumberOfCores": 6,
+      "NumberOfLogicalProcessors": 12,
+      "MaxClockSpeed": 2500
+    }
+  },
+  "memory": {
+    "total_gb": 15.86,
+    "available_gb": 8.11,
+    "psutil_version": "7.2.2",
+    "modules_raw": {
+      "Capacity": 17179869184,
+      "Speed": 2667,
+      "ConfiguredClockSpeed": 2667,
+      "SMBIOSMemoryType": 26,
+      "DeviceLocator": "Controller1-DIMMB1",
+      "Manufacturer": "Kingston"
+    },
+    "module_count": 1,
+    "modules_summary": [
+      {
+        "capacity_gb": 16.0,
+        "speed_mts": 2667,
+        "configured_mts": 2667,
+        "type": "DDR4",
+        "slot": "Controller1-DIMMB1"
+      }
+    ],
+    "note": "Stick count is not channel count; confirm dual-channel from the slot labels and the motherboard manual."
+  },
+  "power_plan": {
+    "ok": true,
+    "returncode": 0,
+    "stdout": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "stderr": ""
+  },
+  "llama_cpp": {
+    "dir": "tools\\llama.cpp\\b11871",
+    "llama-bench": {
+      "path": "tools\\llama.cpp\\b11871\\llama-bench.exe",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "load_backend: loaded RPC backend from F:\\cpu-llm-inference-lab\\tools\\llama.cpp\\b11871\\ggml-rpc.dll\nload_backend: loaded CPU backend from F:\\cpu-llm-inference-lab\\tools\\llama.cpp\\b11871\\ggml-cpu-alderlake.dll\nversion: 0.7.0-dev (build 11871, commit b3fa69955)\nbuilt with Clang 20.1.8 for Windows x86_64"
+    },
+    "llama-cli": {
+      "path": "tools\\llama.cpp\\b11871\\llama-cli.exe",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "version: 0.7.0-dev (build 11871, commit b3fa69955)\nbuilt with Clang 20.1.8 for Windows x86_64"
+    },
+    "note": "Also record the release tag you downloaded (e.g. from the zip name) in your README. Check the CPU feature line in llama.cpp's startup log for AVX2/AVX-512 rather than assuming."
+  },
+  "git": {
+    "available": true,
+    "commit": "42d9d4bf864871bc7c9d745211dc5273b6531887",
+    "dirty": true
+  },
+  "warnings": []
+}

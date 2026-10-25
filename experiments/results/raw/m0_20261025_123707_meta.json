@@ -1,0 +1,103 @@
+{
+  "session_timestamp": "20261025_123707",
+  "step1_env_record": {
+    "command": [
+      "F:\\cpu-llm-inference-lab\\.venv\\Scripts\\python.exe",
+      "scripts\\record_env.py",
+      "--llama-dir",
+      "tools\\llama.cpp\\b11871",
+      "--label",
+      "m0-bench"
+    ],
+    "start_time": "2026-10-25T12:37:07.316622+05:30",
+    "end_time": "2026-10-25T12:37:09.110912+05:30",
+    "wall_seconds": 1.7940972999999758,
+    "returncode": 0
+  },
+  "step2_runs": [
+    {
+      "run_index": 1,
+      "command": [
+        "tools\\llama.cpp\\b11871\\llama-bench.exe",
+        "-m",
+        "models\\qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "-p",
+        "512",
+        "-n",
+        "128",
+        "-t",
+        "6",
+        "-ngl",
+        "0",
+        "-r",
+        "5",
+        "-o",
+        "json"
+      ],
+      "start_time": "2026-10-25T12:37:10.112126+05:30",
+      "end_time": "2026-10-25T12:37:33.858806+05:30",
+      "wall_seconds": 23.74645399999963,
+      "returncode": 0,
+      "pre_run_available_ram_bytes": 8719691776,
+      "pre_run_cpu_percent": 6.6,
+      "stdout_file": "experiments\\results\\raw\\m0_20261025_123707_run1.json",
+      "stderr_file": "experiments\\results\\raw\\m0_20261025_123707_run1.stderr.log"
+    },
+    {
+      "run_index": 2,
+      "command": [
+        "tools\\llama.cpp\\b11871\\llama-bench.exe",
+        "-m",
+        "models\\qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "-p",
+        "512",
+        "-n",
+        "128",
+        "-t",
+        "6",
+        "-ngl",
+        "0",
+        "-r",
+        "5",
+        "-o",
+        "json"
+      ],
+      "start_time": "2026-10-25T12:37:34.860020+05:30",
+      "end_time": "2026-10-25T12:37:58.062993+05:30",
+      "wall_seconds": 23.203006599999753,
+      "returncode": 0,
+      "pre_run_available_ram_bytes": 8790876160,
+      "pre_run_cpu_percent": 16.4,
+      "stdout_file": "experiments\\results\\raw\\m0_20261025_123707_run2.json",
+      "stderr_file": "experiments\\results\\raw\\m0_20261025_123707_run2.stderr.log"
+    },
+    {
+      "run_index": 3,
+      "command": [
+        "tools\\llama.cpp\\b11871\\llama-bench.exe",
+        "-m",
+        "models\\qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "-p",
+        "512",
+        "-n",
+        "128",
+        "-t",
+        "6",
+        "-ngl",
+        "0",
+        "-r",
+        "5",
+        "-o",
+        "json"
+      ],
+      "start_time": "2026-10-25T12:37:59.066079+05:30",
+      "end_time": "2026-10-25T12:38:22.478606+05:30",
+      "wall_seconds": 23.427719900000284,
+      "returncode": 0,
+      "pre_run_available_ram_bytes": 8833691648,
+      "pre_run_cpu_percent": 3.8,
+      "stdout_file": "experiments\\results\\raw\\m0_20261025_123707_run3.json",
+      "stderr_file": "experiments\\results\\raw\\m0_20261025_123707_run3.stderr.log"
+    }
+  ]
+}
